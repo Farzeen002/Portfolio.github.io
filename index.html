@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farzeen -- Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        html,
+        body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(32, 32, 32);
+            padding: 0 20px;
+        }
+
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(222, 236, 21);
+        }
+
+        main hr {
+            border: 0;
+            background: rgb(222, 236, 21);
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3rem;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: rgb(32, 32, 32);
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 70px;
+        }
+
+        h3 {
+            text-align-last: left;
+        }
+
+        .leftSection .btn:hover {
+            text-decoration: none;
+            color: rgb(222, 236, 21);
+            font-size: 1.01rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(222, 236, 21);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(222, 236, 21);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+            padding: 0 10px;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 35vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 60px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 200px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+
+
+        footer {
+            background-color: rgb(32, 32, 32);
+            padding: 20px;
+        }
+
+        .cd {
+            text-align: justify;
+            font-size: 13px;
+            color: gray;
+        }
+
+        .footer {
+            display: flex;
+            margin-top: 20px;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .footer-first {
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-second {
+            margin-top: 20px;
+        }
+
+        .footer-third {
+            margin-top: 20px;
+        }
+
+        .footer-fourth {
+            margin-top: 20px;
+        }
+
+        .footer ul {
+            list-style: none;
+            /* display: flex; */
+            justify-content: center;
+        }
+
+        .footer ul li {
+            margin: 0 10px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            margin-top: 10px;
+            padding: 12px 0;
+        }
+
+
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                align-items: flex-start;
+                width: 100%;
+                height: auto;
+                padding: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 10px;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .firstSection {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 80px 0;
+            }
+
+            .leftSection {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            .leftSection .btn {
+                margin-top: 40px;
+            }
+
+            .rightSection img {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            footer {
+                /* width: 100%;
+                min-height: 200px; */
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                min-height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .firstSection>div {
+                width: 80%;
+            }
+
+            .secondSection .box {
+                width: 90vw;
+                margin: 56px 0;
+            }
+
+            .vertical {
+                height: 93px;
+                margin: 0 20px;
+            }
+
+
+            .footer {
+                margin-top: 20px;
+                justify-content: center;
+            }
+
+            .footer>div {
+                width: 100%;
+            }
+
+            footer {
+                width: 100%;
+
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Farzeen's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Farzeen</span>
+                <div>and I am a passionate</div>
+
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" id="viewResumeBtn">View Resume</button>
+                    <button class="btn" id="visitGitHubBtn">Visit GitHub</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="/images/bg1.jpg" class="img1" alt="">
+            </div>
+        </section>
+
+
+        <hr>
+        <section id="about" class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="/images/java.png" alt="">
+                    <div class="vertical-title">
+                        Java Full Stack Developer (2023)
+                    </div>
+
+                    <div class="vertical-desc">
+                        Infomatics Corp
+                        www.infomaticscorp.com
+                        Technologies : Angular, Java, Maven, Eclipse, Spring Boot, Spring MVC, MySQL, Hibernate,
+                        Workbench, Git, GitHub, Bitbucket, Jira.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Farzeen's Portfolio</h3>
+                <div class="cd" id="contact" style="display: none;">
+
+                    <p>Phone No: +91 9513782975</p>
+                    <p>Email: afarzeen50@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/mr._.fan_tastic/" target="_blank">
+                            <img src="/images/instagram.png" alt="Instagram" width="33px" height="auto">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/farzeen-ahmed/" target="_blank">
+                            <img src="/images/lkdin.png" alt="LinkedIn" width="30px" height="auto">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/farzeen.ahmed.37" target="_blank">
+                            <img src="/images/fb.png" alt="Facebook" width="30px" height="auto">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; farzeensportfolio.com | All rights reserved
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Full Stack Developer'],
+            typeSpeed: 50,
+        });
+
+        document.getElementById("viewResumeBtn").addEventListener("click", function () {
+            window.open("/Resume/Farzeen's Resume.pdf", "_blank");
+        });
+
+        document.getElementById("visitGitHubBtn").addEventListener("click", function () {
+            window.open("https://github.com/Farzeen002", "_blank");
+        });
+
+        function showContactDetails() {
+            var contactDetails = document.getElementById("contact");
+            contactDetails.style.display = "block";
+        }
+
+        document.querySelector('a[href="#contact"]').addEventListener("click", showContactDetails);
+
+    </script>
+</body>
+
+</html>
